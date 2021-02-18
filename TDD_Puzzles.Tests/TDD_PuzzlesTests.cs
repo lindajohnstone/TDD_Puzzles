@@ -8,7 +8,13 @@ namespace TDD_Puzzles.Tests
         [Fact]
         public void Test1()
         {
-
+            // arrange
+            var expected = "hard";
+            var actual = new Mommifier();
+            // act
+            var result = actual.WriteString("hard");
+            // assert
+            Assert.Equal(expected, result);
         }
     }
 }
