@@ -6,12 +6,22 @@ namespace TDD_Puzzles.Tests
     public class TDD_PuzzlesTests
     {
         [Fact]
-        public void Test1()
+        public void Return_Original_String()
         {
             // arrange
             var expected = "hard";
             // act
             var result = Mommifier.WriteString("hard");
+            // assert
+            Assert.Equal(expected, result);
+        }
+        [Fact]
+        public void Replace_Vowel_In_Word_With_Mommy()
+        {
+            // arrange
+            var expected = "hmommys";
+            // act
+            var result = Mommifier.WriteString("his");
             // assert
             Assert.Equal(expected, result);
         }
