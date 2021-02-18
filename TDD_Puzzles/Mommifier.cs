@@ -6,7 +6,7 @@ namespace TDD_Puzzles.Tests
     {
         public static string WriteString(string word)
         {
-            return word.Replace("i", "mommy");
+            return word.Replace("i", "mommy").Replace("ea", "mommy");
         }
     }
 }

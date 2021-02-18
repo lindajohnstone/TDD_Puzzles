@@ -25,5 +25,15 @@ namespace TDD_Puzzles.Tests
             // assert
             Assert.Equal(expected, result);
         }
+        [Fact]
+        public void Replace_More_Than_One_Vowel_With_Mommy()
+        {
+            // arrange
+            var expected = "hmommyr";
+            // act
+            var result = Mommifier.WriteString("hear");
+            // assert
+            Assert.Equal(expected, result);
+        }
     }
 }
