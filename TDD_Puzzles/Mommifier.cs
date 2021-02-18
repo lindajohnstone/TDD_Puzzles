@@ -7,6 +7,11 @@ namespace TDD_Puzzles.Tests
         public static string WriteString(string word)
         {
             int vowelCount = GetVowelCount(word);
+            return ReplaceVowels(word, vowelCount);
+        }
+
+        private static string ReplaceVowels(string word, int vowelCount)
+        {
             if ((vowelCount / word.Length) > 0.3) return word;
             return word.Replace("i", "mommy").Replace("ea", "mommy");
         }
@@ -19,7 +24,6 @@ namespace TDD_Puzzles.Tests
             {
                 if (word.Contains(vowel)) vowelCount++;
             }
-
             return vowelCount;
         }
     }
