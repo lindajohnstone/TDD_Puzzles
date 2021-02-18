@@ -35,5 +35,15 @@ namespace TDD_Puzzles.Tests
             // assert
             Assert.Equal(expected, result);
         }
+        // [Fact]
+        // public void Replace_Vowel_With_Mommy_Where_Vowel_Count_More_Than_30_Percent_Of_Word_Length()
+        // {
+        //     // arrange
+        //     var expected = "hard";
+        //     // act
+        //     var result = Mommifier.WriteString("hard");
+        //     // assert
+        //     Assert.Equal(expected, result);
+        // }
     }
 }
