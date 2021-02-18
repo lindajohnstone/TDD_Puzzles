@@ -10,9 +10,8 @@ namespace TDD_Puzzles.Tests
         {
             // arrange
             var expected = "hard";
-            var actual = new Mommifier();
             // act
-            var result = actual.WriteString("hard");
+            var result = Mommifier.WriteString("hard");
             // assert
             Assert.Equal(expected, result);
         }
