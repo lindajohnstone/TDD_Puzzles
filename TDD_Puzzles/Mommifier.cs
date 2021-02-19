@@ -13,8 +13,7 @@ namespace TDD_Puzzles.Tests
         {
             string[] vowels = { "o", "a", "e", "i", "u" };
             if (vowelCount / word.Length < 0.3) return word;
-            word = ReplaceVowels(word, vowels);
-            return word;
+            return ReplaceVowels(word, vowels);
         }
 
         private static string ReplaceVowels(string word, string[] vowels)
