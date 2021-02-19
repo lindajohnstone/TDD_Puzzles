@@ -6,8 +6,7 @@ namespace TDD_Puzzles.Tests
     {
         public static string WriteString(string word)
         {
-            double vowelCount = GetVowelCount(word);
-            return ReplaceVowels(word, vowelCount);
+            return ReplaceVowels(word, GetVowelCount(word));
         }
 
         private static string ReplaceVowels(string word, double vowelCount)
@@ -27,7 +26,7 @@ namespace TDD_Puzzles.Tests
             return word;
         }
 
-        private static int GetVowelCount(string word)
+        private static double GetVowelCount(string word)
         {
             var vowelCount = 0;
             char[] vowels = { 'a', 'e', 'i', 'o', 'u' };
