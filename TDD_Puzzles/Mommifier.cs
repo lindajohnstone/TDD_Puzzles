@@ -6,14 +6,20 @@ namespace TDD_Puzzles.Tests
     {
         public static string WriteString(string word)
         {
-            int vowelCount = GetVowelCount(word);
+            double vowelCount = GetVowelCount(word);
             return ReplaceVowels(word, vowelCount);
         }
 
-        private static string ReplaceVowels(string word, int vowelCount)
+        private static string ReplaceVowels(string word, double vowelCount)
         {
-            if ((vowelCount / word.Length) > 0.3) return word;
-            return word.Replace("i", "mommy").Replace("ea", "mommy");
+            string[] vowels = { "o", "a", "e", "i", "u" };
+            double number = vowelCount / word.Length;
+            if (number < 0.3) return word;
+            foreach(var vowel in vowels)
+            {
+                word = word.Replace(vowel, "mommy");
+            }
+            return word;
         }
 
         private static int GetVowelCount(string word)
