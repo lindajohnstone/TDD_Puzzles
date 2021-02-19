@@ -13,6 +13,16 @@ namespace TDD_Puzzles.Tests
         {
             string[] vowels = { "o", "a", "e", "i", "u" };
             if (vowelCount / word.Length < 0.3) return word;
+            char[] letters = word.ToCharArray();
+            // loop through array
+            // check if letter is a vowel
+            // remember index
+            // if index+1 is a vowel
+            // replace the first vowel only
+            foreach (var letter in letters)
+            {
+                
+            }
             return ReplaceVowels(word, vowels);
         }
 
