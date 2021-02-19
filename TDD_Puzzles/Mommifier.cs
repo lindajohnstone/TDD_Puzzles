@@ -15,10 +15,17 @@ namespace TDD_Puzzles.Tests
             string[] vowels = { "o", "a", "e", "i", "u" };
             double number = vowelCount / word.Length;
             if (number < 0.3) return word;
-            foreach(var vowel in vowels)
+            word = ReplaceVowels(word, vowels);
+            return word;
+        }
+
+        private static string ReplaceVowels(string word, string[] vowels)
+        {
+            foreach (var vowel in vowels)
             {
                 word = word.Replace(vowel, "mommy");
             }
+
             return word;
         }
 
