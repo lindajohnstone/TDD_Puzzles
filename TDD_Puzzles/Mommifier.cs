@@ -1,6 +1,6 @@
 using System;
 
-namespace TDD_Puzzles.Tests
+namespace TDD_Puzzles
 {
     public class Mommifier
     {
